@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script src="https://kit.fontawesome.com/e9e16a3c8a.js" crossorigin="anonymous"></script>
+        <title>Puebla</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="index.html">Puebla</ax></div>
+                    <ul class="links">
+                        <li class="linkstyle"><a href="volcans.html">Les Volcans</a></li>
+                        <li class="linkstyle"><a href="centre_historique.html">Centre Historique</a></li>
+                        <li class="linkstyle"><a href="bataille.html">Bataille du 5 mai</a></li>
+                    </ul>
+                    <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="dropdown">
+                <li><a href="volcans.html">Les volcans</a></li>
+                <li><a href="centre_historique.html">Centre Historique</a></li>
+                <li><a href="bataille.html">Bataille du 5 mai</a></li>
+            </div>
+
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="bg"><h1>Connaître Puebla</h1>
+                    <p>Protège pour les volcans Popocatépetl et Iztaccíhuatl, c'est une ville Mexicaine très important pour notre culture. <br>Puebla a une riche activité artistique qu'est millenaire et il a beaucoup d'histoir avec la France. <br>Ce site web est pour découvrir les mythes importants, la gastronomie et un peu de l'histoir entre Puebla et la France.</div>
+            </section>
+        </main>
+
+        <script>
+
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropdownMenu = document.querySelector('.dropdown')
+            
+            toggleBtn.onclick = function (){
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+
+        </script>
+    </body>
+</html>

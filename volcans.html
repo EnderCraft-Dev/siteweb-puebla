@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/volcans.css">
+        <script src="https://kit.fontawesome.com/e9e16a3c8a.js" crossorigin="anonymous"></script>
+        <title>Puebla</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="index.html">Puebla</ax></div>
+                    <ul class="links">
+                        <li><a href="#">Les Volcans</a></li>
+                        <li><a href="centre_historique.html">Centre Historique</a></li>
+                        <li><a href="bataille.html">Bataille du 5 mai</a></li>
+                    </ul>
+                    <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="dropdown">
+                <li><a href="#">Les volcans</a></li>
+                <li><a href="centre_historique.html">Centre Historique</a></li>
+                <li><a href="bataille.html">Bataille du 5 mai</a></li>
+            </div>
+
+        </header>
+
+
+        <main>
+            <section id="hero">
+                <div class="bg"><h1>Popocatépetl et Iztaccíhuatl</h1>
+                <p>Dans la mythologie aztèque, Popocatépetl était un <br>guerrier amoureux d’Ixtaccíhuatl. Le père <br>d’Iztaccíhuatl l’envoya guerroyer en Oaxaca en lui promettant <br>la main de sa fille s’il revenait, <br>le père pensant que cela était impossible. Popocatépetl s’en alla, <br> et on affirma à Iztaccíhuatl qu’il était mort; <br>elle en mourut de chagrin. Quand il revint, il mourut <br> lui aussi de chagrin en apprenant la perte de son aimée. <br>Les dieux recouvrirent leurs corps de neige et les changèrent en montagnes. <br>Iztaccíhuatl fut appelée «femme endormie», <br> à cause de sa ressemblance avec un corps de femme allongé. <br> Popocatépetl devint le volcan du même nom, faisant pleuvoir le feu sur terre, <br> mis en rage par la mort de son amante.</p>
+                </div>
+            </section>
+        </main>
+        
+
+        <script>
+
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropdownMenu = document.querySelector('.dropdown')
+            
+            toggleBtn.onclick = function (){
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+
+        </script>
+    </body>
+</html>

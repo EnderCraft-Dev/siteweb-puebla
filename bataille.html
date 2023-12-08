@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/bataille.css">
+        <script src="https://kit.fontawesome.com/e9e16a3c8a.js" crossorigin="anonymous"></script>
+        <title>Puebla</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="index.html">Puebla</ax></div>
+                    <ul class="links">
+                        <li><a href="volcans.html">Les Volcans</a></li>
+                        <li><a href="centre_historique.html">Centre Historique</a></li>
+                        <li><a href="#">Bataille du 5 mai</a></li>
+                    </ul>
+                    <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="dropdown">
+                <li><a href="volcans.html">Les volcans</a></li>
+                <li><a href="centre_historique.html">Centre Historique</a></li>
+                <li><a href="#">Bataille du 5 mai</a></li>
+            </div>
+
+        </header>
+
+
+        <main>
+            <section id="hero">
+                <div class="bg"><h1>Bataille de Puebla</h1>
+                <p>Le 5 mai 1862, la progression des armées françaises au Mexique se heurte à la résistance de Puebla, <br> une ville fortifiée sur la route de Mexico. Cette bataille est le premier accroc dans la guerre <br>franco-mexicaine  que les courtisans de l'empereur Napoléon III ont qualifiée de «plus grande pensée du règne». <br> Sept mille hommes piétinent devant Puebla et sont mis en déroute par des renforts mexicains... </p>
+                <br>
+                <p>Il s'agit en grande partie d'Indiens descendus des montagnes voisines. Leur victoire sur la «meilleure armée <br>du monde» a un immense retentissement en France comme au Mexique.  <br>« Habitants de Puebla (...) vous avez raison de croire que je suis avec vous. Ce n'est pas <br>la France qui vous fait la guerre, c'est l'empire », écrit Victor Hugo aux défenseurs de la ville,<br> de son exil de Guernesey. Il faut envoyer en catastrophe 28 000 hommes en renfort, sous le commandement <br>du général Forey, pour enfin avoir raison de la résistance de la ville.</p>
+                </div>
+            </section>
+        </main>
+        
+
+        <script>
+
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropdownMenu = document.querySelector('.dropdown')
+            
+            toggleBtn.onclick = function (){
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+
+        </script>
+    </body>
+</html>

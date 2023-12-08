@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/centre.css">
+        <script src="https://kit.fontawesome.com/e9e16a3c8a.js" crossorigin="anonymous"></script>
+        <title>Puebla</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="index.html">Puebla</ax></div>
+                    <ul class="links">
+                        <li><a href="volcans.html">Les Volcans</a></li>
+                        <li><a href="#">Centre Historique</a></li>
+                        <li><a href="bataille.html">Bataille du 5 mai</a></li>
+                    </ul>
+                    <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="dropdown">
+                <li><a href="#">Les volcans</a></li>
+                <li><a href="#">Centre Historique</a></li>
+                <li><a href="bataille.html">Bataille du 5 mai</a></li>
+            </div>
+
+        </header>
+
+
+        <main>
+            <section id="hero">
+                <div class="bg"><h1>Centre Historique</h1>
+                <p>Dans le centre historique de Puebla, on peut trouvé des bâtiments ancients tels églises ou restaurants y compris, maisons.</p>
+                <br><p>Par exemple, les bâtiments dans les images présentées:</p>
+                <br><br>
+
+                <h3>Hôtel de ville</h3>
+                <img src="./assets/images/hôtel_de_ville.png" alt="Casa de los hermanos Serán" class="im">
+                <br><br><br><br>
+
+                <h3>Maison des frères Serdán</h3>
+                <img src="./assets/images/casa_serdan.png" alt="Casa de los hermanos Serán" class="im">
+                <br><br><br><br>
+
+                <h3>Marché Victoria</h3>
+                <img src="./assets/images/marche_victoria.png" alt="Casa de los hermanos Serán" class="im">
+                <br><br><br><br>
+
+                <h3>Théâtre municipal</h3>
+                <img src="./assets/images/theatre_de_ville.png" alt="Casa de los hermanos Serán" class="im">
+                <br><br><br><br>
+
+                </div>
+            </section>
+        </main>
+        
+
+        <script>
+
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropdownMenu = document.querySelector('.dropdown')
+            
+            toggleBtn.onclick = function (){
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+
+        </script>
+    </body>
+</html>
